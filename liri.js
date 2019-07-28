@@ -27,7 +27,6 @@ function concertIt(bandQuery) {
 
     request(queryUrl, function (error, response, body) {
 
-        // If the request is successful
         if (!error && response.statusCode === 200) {
 
             var concertData = JSON.parse(body);
@@ -38,10 +37,9 @@ function concertIt(bandQuery) {
             console.log("===============================");
            
             console.log("Venue Name : " + concertData[0].venue.name +
-                // * Venue location
-                "\nVenue Location: " + concertData[0].venue.city + "," + concertData[0].venue.country +
                 
-                "\nDate of the Event: " + momentDT +
+                "\nVenue Location: " + concertData[0].venue.city + "," + concertData[0].venue.country +
+                "\nDate of the Event: " + momentDT + concertDT +
                 "\n===============================");
             
         };
@@ -82,11 +80,9 @@ function spotifyIt(musicSearch) {
     // movie-this
 function movieIt (movieQuery) {
  
-    
      if (movieQuery === undefined || null) {
             movieQuery = "Titanic";
         }
-
     
     var queryUrl = "http://www.omdbapi.com/?t=" + movieQuery + "&y=&plot=short&apikey=trilogy";
 
