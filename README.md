@@ -1,7 +1,7 @@
 # liri-node-app
 
 ## How to use
-Use node to run this program. Use node liri.js then run one of the following comands, then add search text:
+Example: node liri.js movie-this underworld or node liri.js concert-this madonna
 ```
 concert-this
 ```
@@ -15,8 +15,7 @@ movie-this
 do-what-it-says
 ```
 
-### When running a command follow it by desired text/search.
-Example: node liri.js movie-this underworld
+### Comands Runnig Description.
 
 When ```concert-this``` command is used you will be provided with:
 * Name of the venue
