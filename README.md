@@ -14,7 +14,7 @@ movie-this
 ```
 do-what-it-says
 ```
-```
+
 ### When running a command follow it by desired text/search.
 Example: node liri.js movie-this underworld
 
